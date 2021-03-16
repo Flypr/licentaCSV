@@ -148,7 +148,7 @@ input[type=file] {
     border: 1px solid #fff;
     border-radius: 50px;
     display: inline-block;
-    padding: 10px 16px;
+    padding: 16px 22px;
     cursor: pointer;
     font-size: 120%;
     font-weight: 300;

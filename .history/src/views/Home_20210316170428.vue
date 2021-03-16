@@ -112,8 +112,7 @@ export default {
 </script>
 
 <style scoped>
-/* html,
-body {
+html, body {
     margin: 0;
     padding: 0;
     font-size: 20px;
@@ -124,12 +123,12 @@ body {
     width: 100vw;
     height: 100vw;
     background-color: #6baaa1;
-} */
+}
 
 .title-text {
-    padding-top: 7%;
-    font-size: 400%;
-    font-weight: 400;
+    padding-top: 10%;
+    font-size: 600%;
+    font-weight: 600;
     text-align: center;
     color: #fff;
 }
@@ -148,10 +147,10 @@ input[type=file] {
     border: 1px solid #fff;
     border-radius: 50px;
     display: inline-block;
-    padding: 10px 16px;
+    padding: 16px 22px;
     cursor: pointer;
     font-size: 120%;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     transition: background-color 0.2s, color 0.2s;
 }
@@ -184,10 +183,11 @@ tbody {
     color: #fff;
 }
 
-td,
-th {
+td, th {
     border: 1px solid #fff;
     text-align: left;
     padding: 16px 26px;
 }
+
+
 </style>

@@ -112,53 +112,52 @@ export default {
 </script>
 
 <style scoped>
-/* html,
-body {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    font-family: Raleway, Arial, Helvetica, sans-serif;
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
 }
 
 .container {
-    width: 100vw;
-    height: 100vw;
-    background-color: #6baaa1;
-} */
+  width: 100vw;
+  /* height: 100vw; */
+  background-color: #6baaa1;
+}
 
 .title-text {
-    padding-top: 7%;
-    font-size: 400%;
-    font-weight: 400;
-    text-align: center;
-    color: #fff;
+  padding-top: 10%;
+  font-size: 600%;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
 }
 
 .file-btn {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 input[type=file] {
-    display: none;
+  display: none;
 }
 
 .custom-file-upload,
 .custom-file-upload:visited {
-    border: 1px solid #fff;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 10px 16px;
-    cursor: pointer;
-    font-size: 120%;
-    font-weight: 300;
-    color: #fff;
-    transition: background-color 0.2s, color 0.2s;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 16px 22px;
+  cursor: pointer;
+  font-size: 120%;
+  font-weight: 400;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .custom-file-upload:hover {
-    background-color: #fff;
-    color: #6baaa1;
+  background-color: #fff;
+  color: #6baaa1;
 }
 
 h1,
@@ -167,27 +166,26 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 table {
-    border-collapse: collapse;
-    margin: 50px auto;
+  border-collapse: collapse;
+  margin: 50px auto;
 }
 
 thead {
-    background-color: #fff;
-    color: #6baaa1;
+  background-color: #fff;
+  color: #6baaa1;
 }
 
 tbody {
-    color: #fff;
+  color: #fff;
 }
 
-td,
-th {
-    border: 1px solid #fff;
-    text-align: left;
-    padding: 16px 26px;
+td, th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 16px 26px;
 }
 </style>
