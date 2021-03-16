@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Import/Parser</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="container">
+
+            <div class="row">
+                <div class="title-text">
+                    <p>CSV Import</p>
+                </div>
+            </div>
+
+            <div class="row file-btn">
+                <label class="custom-file-upload">
+                    <input type="file" id="csv" name="csv_file" class="button-control" @change="loadCSV($event)">
+                    Choose File
+                </label>
+            </div>
+
+
+            <table v-if="parse_csv">
+                <thead>
+                    <tr>
+                        <th v-for="key in parse_header" @click="sortBy(key)" :class="{ active: sortKey == key }">
+                            {{ key | capitalize }}
+                            <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'"></span>
+                        </th>
+                    </tr>
+                </thead>
+                <tr v-for="csv in parse_csv">
+                    <td v-for="key in parse_header">
+                        {{ csv[key] }}
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

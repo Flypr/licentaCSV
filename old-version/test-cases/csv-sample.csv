@@ -1,0 +1,5 @@
+columnA,columnB,columnC,columnD,columnE,columnF
+Susan,41,a,12.3,"""true""",blablabla
+Mike,5,b,23.5,"""true""",blablabla
+Jake,33,c,21.6,"""false""",blablabla
+Jill,30,d,53.64,"""true""",blablabla
