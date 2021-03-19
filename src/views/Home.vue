@@ -11,7 +11,8 @@
                 Choose File
             </label>
         </div>
-        <table v-if="parse_csv">
+        <div class="row table-row">
+          <table v-if="parse_csv">
             <thead>
                 <tr>
                     <th v-for="key in parse_header" 
@@ -29,7 +30,8 @@
                     {{ csv[key] }}
                 </td>
             </tr>
-        </table>
+          </table>
+        </div>
     </div>
 </template>
 
@@ -118,47 +120,48 @@ body {
     padding: 0;
     font-size: 20px;
     font-family: Raleway, Arial, Helvetica, sans-serif;
-}
-
-.container {
-    width: 100vw;
-    height: 100vw;
-    background-color: #6baaa1;
 } */
 
+.container {
+  max-width: 100vw;
+  max-height: 100vh;
+  overflow-y: auto;
+  background-color: #6baaa1;
+}
+
 .title-text {
-    padding-top: 7%;
-    font-size: 400%;
-    font-weight: 400;
-    text-align: center;
-    color: #fff;
+  padding-top: 7%;
+  font-size: 400%;
+  font-weight: 400;
+  text-align: center;
+  color: #fff;
 }
 
 .file-btn {
-    padding: 20px;
-    text-align: center;
+  padding: 20px;
+  text-align: center;
 }
 
 input[type=file] {
-    display: none;
+  display: none;
 }
 
 .custom-file-upload,
 .custom-file-upload:visited {
-    border: 1px solid #fff;
-    border-radius: 50px;
-    display: inline-block;
-    padding: 10px 16px;
-    cursor: pointer;
-    font-size: 120%;
-    font-weight: 300;
-    color: #fff;
-    transition: background-color 0.2s, color 0.2s;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-size: 120%;
+  font-weight: 300;
+  color: #fff;
+  transition: background-color 0.2s, color 0.2s;
 }
 
 .custom-file-upload:hover {
-    background-color: #fff;
-    color: #6baaa1;
+  background-color: #fff;
+  color: #6baaa1;
 }
 
 h1,
@@ -170,24 +173,30 @@ h6 {
     margin: 0;
 }
 
+.table-row {
+  max-height: 50vw;
+}
+
 table {
-    border-collapse: collapse;
-    margin: 50px auto;
+  overflow: auto;
+  font-size: 80%;
+  border-collapse: collapse;
+  margin: 50px auto;
 }
 
 thead {
-    background-color: #fff;
-    color: #6baaa1;
+  background-color: #fff;
+  color: #6baaa1;
 }
 
 tbody {
-    color: #fff;
+  color: #fff;
 }
 
 td,
 th {
-    border: 1px solid #fff;
-    text-align: left;
-    padding: 16px 26px;
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 10px 16px;
 }
 </style>
